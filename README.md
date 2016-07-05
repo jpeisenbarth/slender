@@ -3,7 +3,9 @@ Slender
 
 Minimalist theme for [Hugo](http://gohugo.io/) with [base16](https://github.com/chriskempson/base16) color schemes.
 
-It is based on the work of CrimsonRay. I upload this on github because CrimsonRay's account has been deleted and it is impossible to find the Slender theme repository anymore.
+It is based on the work of CrimsonRay. I reupload this on github because CrimsonRay's account cannot be found anymore and thus it is impossible to find the Slender theme repository anymore.
+
+[Demo](www.eisenbarth.io)
 
 ### Screenshot
 
