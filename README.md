@@ -134,4 +134,6 @@ Add the new page to navbar in `config.toml` under `[menu]`.
 
 ### License
 
-[MIT](LICENSE.md) &copy; 2015 CrimsonRay
+[MIT](LICENSE.md)
+Original work &copy; 2015-2016 CrimsonRay
+Modified work &copy; 2016 Eisenbarth
