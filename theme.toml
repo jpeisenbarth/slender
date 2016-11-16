@@ -2,16 +2,16 @@
 
 name = "Slender"
 license = "MIT"
-licenselink = "https://github.com/CrimsonRay/slender/blob/master/LICENSE.md"
+licenselink = "https://github.com/Eisenbarth/slender/blob/master/LICENSE.md"
 description = "Minimalist theme for Hugo with base16 color schemes."
-homepage = "https://crimsonray.github.io/slender/"
+homepage = "https://github.com/Eisenbarth/slender"
 tags = ["hugo", "blog", "slender"]
 features = ["blog"]
 min_version = 0.14
 
 [author]
-  name = "CrimsonRay"
-  homepage = "https://github.com/CrimsonRay/"
+  name = "CrimsonRay & Eisenbarth"
+  homepage = "https://github.com/Eisenbarth/"
 
 [original]
   name = ""
