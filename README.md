@@ -30,16 +30,15 @@ It is based on the work of CrimsonRay. I reupload this on github because Crimson
 1. Make a new Hugo site
 
     ```none
-    $ hugo new site your_site/
+    hugo new site my_site/
     ```
 
-2. Install Slender
+2. Install Slender ans set up your site
 
     ```none
-    $ cd your_site/
-    $ mkdir themes
-    $ cd themes
-    $ git clone https://github.com/Eisenbarth/slender
+    cd my_site/
+    git clone https://github.com/Eisenbarth/slender themes/slender
+    cp -a themes/slender/exampleSite/* .
     ```
 
 ### Configuration
@@ -133,6 +132,12 @@ $ hugo new page/about.md
 ```
 
 Add the new page to navbar in `config.toml` under `[menu]`.
+
+### Launch The Hugo server
+
+    ```none
+    hugo server
+    ```
 
 ### License
 
