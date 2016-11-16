@@ -9,7 +9,7 @@ It is based on the work of CrimsonRay. I reupload this on github because Crimson
 
 ### Screenshot
 
-![screenshot](images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/Eisenbarth/slender/master/images/screenshot.png)
 
 ### Features
 
@@ -23,7 +23,7 @@ It is based on the work of CrimsonRay. I reupload this on github because Crimson
 
 ### Color Schemes
 
-![slender-color-schemes](images/slender-color-schemes.png)
+![slender-color-schemes](https://raw.githubusercontent.com/Eisenbarth/slender/master/images/slender-color-schemes.png)
 
 ### Installation
 
