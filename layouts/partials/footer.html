@@ -2,7 +2,7 @@
         <footer>
             <p>{{ .Site.Params.footer | markdownify }}</p>
         </footer>
-        <script src="{{ "/js/highlight-9.0.0.min.js" | absURL }}"></script>
+        <script src="{{ "js/highlight-9.0.0.min.js" | absURL }}"></script>
         <script>hljs.initHighlightingOnLoad();</script>
         {{ with .Site.Params.ganalytics }}
         <script type="text/javascript">
