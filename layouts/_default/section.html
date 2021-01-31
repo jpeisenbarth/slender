@@ -1,5 +1,7 @@
-{{ partial "header.html" . }}
+{{ partial "index_header.html" . }}
+{{if eq .RelPermalink "/post/"}}
 <main id="article-listing">
+    <h1 class="title">Posts</h1> 
     {{ $paginator := .Paginate (where .Site.RegularPages "Type" "post") }}
     {{ template "_internal/pagination.html" . }}
     {{ range $paginator.Pages }}
@@ -13,4 +15,16 @@
     </article>
     {{ end }}
 </main>
+{{else if eq .RelPermalink "/page/"}}
+<main id="page-listing">
+    <h1 class="title">Pages</h1> 
+    {{ $paginator := .Paginate (where .Site.Pages "Type" "page") }}
+    {{ template "_internal/pagination.html" . }}
+    {{ range $paginator.Pages }}
+    <page>
+	    <h1 class="article-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+    </page>
+    {{ end }}
+</main>
+{{end}}
 {{ partial "footer.html" . }}

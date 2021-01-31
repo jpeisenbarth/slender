@@ -57,14 +57,7 @@ h1.brand {
     text-align: center;
 }
 
-h1.post-title {
-    font-family: Helvetica, sans-serif;
-    font-size: 38px;
-    text-align: center;
-    margin-top: 112px;
-}
-
-h1.page-title {
+h1.title {
     font-family: "Fjalla One", Helvetica, sans-serif;
     font-size: 48px;
     text-transform: uppercase;
