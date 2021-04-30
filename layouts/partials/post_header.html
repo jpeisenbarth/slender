@@ -31,26 +31,17 @@
                 <nav>
                     <ul>{{ range .Site.Menus.main }}<li><a href="{{ .URL | absURL }}">{{ .Name }}</a></li>{{ end }}</ul>
                 </nav>
-                {{ if eq .Section "page" }}
-                    <h1 class="title">{{ .Title }}</h1>
-                {{ else if eq .Section "post" }}
-                    <h1 class="title">{{ .Title }}</h1>
-                    <aside>
-                        <p><strong>{{ .Date.Format "Mon, Jan 02, 2006" }}</strong></p>
-                    </aside>
-                {{ else }}
-                    <h1 class="brand">{{ .Site.Title }}</h1>
-                    <aside>
-                        <p>{{ .Site.Params.tagline | safeHTML }}</p>
-                        <p>
-                            {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github"></i></a>{{ end }}
-                            {{ with .Site.Params.email }}<a href="{{ . }}"><i class="fa fa-envelope"></i></a>{{ end }}
-                            {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
-                            {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket"></i></a>{{ end }}
-                            {{ with .Site.Params.stackoverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow"></i></a>{{ end }}
-                            {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
-                            {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
-                        </p>
-                    </aside>
-                {{ end }}
+                <h1 class="brand">{{ .Site.Title }}</h1>
+                <aside>
+                    <p>{{ .Site.Params.tagline | safeHTML }}</p>
+                    <p>
+                        {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github"></i></a>{{ end }}
+                        {{ with .Site.Params.email }}<a href="{{ . }}"><i class="fa fa-envelope"></i></a>{{ end }}
+                        {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
+                        {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket"></i></a>{{ end }}
+                        {{ with .Site.Params.stackoverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow"></i></a>{{ end }}
+                        {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
+                        {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
+                    </p>
+                </aside>
             </header>
