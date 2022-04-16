@@ -35,9 +35,9 @@
                         {{ end }}
                         {{ if .IsTranslated }}
                         &mdash;
-                            {{ range .Translations }}
+                        {{ range $.Site.Home.Translations }}
                                 <li>
-                                    <a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+                                    <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
                                 </li>
                                 {{ end}}
                         {{ end}}
