@@ -15,7 +15,9 @@
         <link rel="icon" href="{{ "assets/favicon.ico" | absURL }}" type="image/x-icon">
         <link rel="stylesheet" href="{{ "css/slender-base.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/slender-color-schemes.css" | absURL }}">
-        <link rel="stylesheet" href="{{ "css/font-awesome-4.5.0.min.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/fontawesome.min.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/brands.min.css" | absURL }}">
+        <link rel="stylesheet" href="{{ "css/solid.min.css" | absURL }}">
         <link rel="stylesheet" href="{{ "css/highlight-9.0.0-default.min.css" | absURL }}">
         <title>
             {{ if eq .RelPermalink "/" }}
@@ -55,13 +57,15 @@
                     <aside>
                         <p>{{ .Site.Params.tagline | safeHTML }}</p>
                         <p>
-                            {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa fa-github"></i></a>{{ end }}
-                            {{ with .Site.Params.email }}<a href="{{ . }}"><i class="fa fa-envelope"></i></a>{{ end }}
-                            {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa fa-twitter"></i></a>{{ end }}
-                            {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa fa-bitbucket"></i></a>{{ end }}
-                            {{ with .Site.Params.stackoverflow }}<a href="{{ . }}"><i class="fa fa-stack-overflow"></i></a>{{ end }}
-                            {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa fa-linkedin"></i></a>{{ end }}
-                            {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa fa-facebook"></i></a>{{ end }}
+                            {{ with .Site.Params.google }}<a href="{{ . }}"><i class="fa fa-graduation-cap fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.researchgate }}<a href="{{ . }}"><i class="fa-brands fa-researchgate fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.github }}<a href="{{ . }}"><i class="fa-brands fa-github fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.email }}<a href="{{ . }}"><i class="fa-brands fa-envelope fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.twitter }}<a href="{{ . }}"><i class="fa-brands fa-twitter fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.bitbucket }}<a href="{{ . }}"><i class="fa-brands fa-bitbucket fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.stackoverflow }}<a href="{{ . }}"><i class="fa-brands fa-stack-overflow fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.linkedin }}<a href="{{ . }}"><i class="fa-brands fa-linkedin fa-xl"></i></a>{{ end }}
+                            {{ with .Site.Params.facebook }}<a href="{{ . }}"><i class="fa-brands fa-facebook fa-xl"></i></a>{{ end }}
                         </p>
                     </aside>
                 {{ end }}
